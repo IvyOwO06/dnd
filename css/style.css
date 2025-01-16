@@ -1,0 +1,121 @@
+/* General Reset */
+body, h1, h2, h3, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background: url('../images/bg.jpg') no-repeat center center fixed; /* Use your bg.jpg */
+    background-size: cover; /* Ensure the image covers the entire background */
+    font-family: 'Cinzel', serif; /* A medieval-style font */
+    color: #3b2716; /* Dark brown for text */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+    text-align: center;
+    color: #4a2e11; /* Deep brown */
+    text-shadow: 2px 2px #d4a373; /* Golden glow effect */
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent parchment color */
+    border: 3px solid #774936; /* Dark brown border */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+/* Input Fields */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #774936;
+    border-radius: 5px;
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #774936; /* Dark brown */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #a06742; /* Lighter brown */
+}
+
+/* Page Borders */
+body:before, body:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    z-index: -1;
+}
+
+body:before {
+    left: 0;
+}
+
+body:after {
+    right: 0;
+}
+
+/* Links */
+a {
+    color: #a06742;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-shadow: 1px 1px #d4a373; /* Glow effect on hover */
+}
+
+.note {
+    background: rgba(255, 255, 255, 0.9); /* Parchment-style background */
+    border: 2px solid #774936; /* Brown border */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Optional styling for session and note content */
+.note h2 {
+    color: #4a2e11;
+    text-align: center;
+    text-shadow: 2px 2px #d4a373; /* Golden glow effect */
+}
+
+.note p {
+    font-family: 'Cinzel', serif;
+    color: #3b2716;
+}
+
+.note small {
+    display: block;
+    margin-top: 10px;
+    color: #774936;
+    font-size: 12px;
+    text-align: right;
+}
+
